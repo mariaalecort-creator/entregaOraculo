@@ -1,18 +1,31 @@
 // Crear las listas de imágenes, títulos y frases
 const imagenes = [
-  "https://www.postposmo.com/wp-content/uploads/2020/09/Especies-end%C3%A9micas-de-colombia-3.jpg",
-  "https://www.postposmo.com/wp-content/uploads/2020/09/Especies-end%C3%A9micas-de-colombia-4.jpg",
+  "https://static.wikia.nocookie.net/princesas-y-mascotas-disney/images/2/2e/Cenicienta-0.jpg/revision/latest/scale-to-width-down/303?cb=20190826103412&path-prefix=es",
+  "https://static.wikia.nocookie.net/princessdisney/images/6/60/Ariel.JPG/revision/latest/thumbnail/width/360/height/360?cb=20130427061152",
+  "https://static.wikia.nocookie.net/princesas-y-mascotas-disney/images/3/30/Bella.jpg/revision/latest/scale-to-width-down/323?cb=20190826181543&path-prefix=es",
+  "https://pm1.aminoapps.com/6797/87683e0e212805ac0c7e56a2e5c5fe80537ef387v2_hq.jpg",
 ];
 
 const titulos = [
-  "Tortuga morrocoy",
-  "Ranita venenosa",
+  "Cenicienta",
+  "Ariel",
+  "Bella",
+  "Rapunzel",
 ];
 
 const frases = [
-  "Te alimentas de plantas, frutas, hojas y flores. Vives en bosques de climas cálidos y prefieres la tierra que el agua.",
-  "Eres pequeña pero tu extravagancia no pasa desapercibida. Vives en bosques húmedos y lluviosos y tienes veneno en la piel.",
+  "Haces amigos con facilidad, tienes un corazón bondadoso aunque siempre estás llegando tarde a todos lados",
+  "Te encanta explorar cosas nuevas y nadar. Tu lugar favorito para vacaciones definitvamente es el mar.",
+  "Encuentras refugio en los libros, nada mejor que leer con el calor de una chimenea",
+  "Tu cabello es tu tesoro más preciado pero tu actividad favorita es todo lo que tenfa que ver con el arte y pintar",
 ];
+
+const colores = [
+  "blue",
+  "red",
+  "yellow",
+  "purple",
+]
 
 // Trae los elementos del HTML que tienen ese id
 const imagen = document.getElementById("foto");
@@ -34,6 +47,7 @@ function generarPrediccion() {
 
   // Reemplaza la imagen del elemento 'imagen' por una elegida aleatoriamente
   imagen.src = imagenes[indice];
+  imagen.style.borderColor = colores[indice];
 
   // Reemplaza el texto del elemento 'predicción' por las frases elegidas aleatoriamente
   prediccion.innerHTML = `<p>${frases[indice]}</p>`;
@@ -45,3 +59,4 @@ boton.addEventListener("click", function () {
 });
 
 generarPrediccion();
+

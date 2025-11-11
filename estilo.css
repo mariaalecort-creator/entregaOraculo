@@ -13,7 +13,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  
+  background-color: rgb(248, 220, 234);
   
   /* Código para poner un cursor personalizado*/
  /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto; */
@@ -39,7 +39,7 @@ h2 {
 
 #foto {
  height: 300px;
-  border: #ff7300 solid 5px;
+  border: #dda4d6 solid 5px;
   margin-top: 15px;
 }
 
@@ -57,7 +57,7 @@ h2 {
 
 #boton {
   font-size: 0.9em;
-  background-color: #3d00fdb5;
+  background-color: #db24ccb5;
   color: white;
   margin-bottom: 2em;
   cursor: pointer;
